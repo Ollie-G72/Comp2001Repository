@@ -1,0 +1,35 @@
+openapi: 3.0.0
+info:
+  title: "RP Flask REST API"
+  description: "An API for a trail service"
+  version: "1.0.0"
+
+servers:
+  -url: "/api"
+
+components:
+  Schemas:
+    UserProfile:
+      type: "object"
+      properties:
+        UserID:
+          type: "integer"
+        UserName:
+          type: "string"
+        FirstName:
+          type: "string"
+        SecondName:
+          type: "string"
+        Email:
+          type: "string"
+        DOB:
+          type: "string"
+        UserHeight:
+          type: "string"
+        UserWeight:
+          type: "string"
+        UnitPreference:
+          type: "boolean"
+    
+
+
